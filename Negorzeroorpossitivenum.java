@@ -1,4 +1,4 @@
-// DETERMINE THE NUMBER
+// DETERMINING THE NUMBER
 //IMPORTING UTIL PACKAGE FROM JAVA
 import java.util.*;
 public class Negorzeroorpossitivenum {
