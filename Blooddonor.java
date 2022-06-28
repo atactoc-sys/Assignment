@@ -8,12 +8,14 @@ public class Blooddonor {
         // CREATING NW SCANNER CLASS OBJECT FOR AGE
         Scanner sc = new Scanner(System.in);
         //INPUT OF AGE
+        System.out.println("PLEASE ENTER AGE");
         int age = sc.nextInt();
         //LOOP WITH LOGIC
         if(age<18){
             System.out.println("YOUR AGE NEED TO BE ATLEAST 18");
         }else{
-            System.out.println("WAIT FOR YOUR WEIGHT MEASUREMENT");
+            System.out.println("WAIT FOR YOUR WEIGHT MEASUREMENT\nPLEASE ENTER WEIGHT");
+
             Scanner ab = new Scanner(System.in);
             int weight = ab.nextInt();
 
