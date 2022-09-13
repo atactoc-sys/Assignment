@@ -41,3 +41,58 @@ public class LabActivity3
         }
         return null;
     }
+
+
+
+
+//METHOD TO SWAP VALUES
+    HashMap<String,String> exchangeValue()
+    {
+        HashMap<String,String> M2 = new HashMap<String,String>();
+        Set<Entry<String,String>> set;
+        set = M1.entrySet();
+        Iterator<Entry<String,String>> it;
+        it = set.iterator();
+
+        while (it.hasNext())
+        {
+            Entry<String,String> mw = it.next();
+            M2.put(mw.getValue(),mw.getKey());
+
+        }
+        System.out.println(M2);
+        return M2;
+    }
+
+    //  ARRAYlIST TO STORE
+    ArrayList<String> toArrayList()
+    {
+        ArrayList<String> list = new ArrayList<>();
+        Set<Entry<String,String>> set;
+        set = M1.entrySet();
+        Iterator<Entry<String,String>> it;
+        it = set.iterator();
+
+        while (it.hasNext())
+        {
+            Entry<String,String> mw = it.next();
+            list.add(mw.getValue());
+        }
+        return list;
+    }
+
+    //MAIN METHOD
+    public static void main(String[] args)
+    {
+        LabActivity3 obj = new LabActivity3();
+        obj.saveCountryCapital("INDIA","DELHI");
+        obj.saveCountryCapital("JAPAN","TOKIO");
+        obj.receiveCountry("DELHI");
+        obj.receiveCapital("JAPAN");
+        obj.exchangeValue();
+        obj.toArrayList();
+
+
+    }
+
+}
